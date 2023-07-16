@@ -1271,7 +1271,7 @@
       this._isTransitioning = false;
       this._element = element;
       this._config = this._getConfig(config);
-      this._triggerArray = [].slice.call(document.querySelectorAll("[data-toggle=\"collapse\"][href=\"#" + element.id + "\"]," + ("[data-toggle=\"collapse\"][data-target=\"#" + element.id + "\"]")));
+      this._triggerArray = [].slice.call(document.querySelectorAll("[data-toggle=\"collapse\"][href=\"_blank" + element.id + "\"]," + ("[data-toggle=\"collapse\"][data-target=\"_blank" + element.id + "\"]")));
       var toggleList = [].slice.call(document.querySelectorAll(Selector$3.DATA_TOGGLE));
 
       for (var i = 0, len = toggleList.length; i < len; i++) {
@@ -6498,7 +6498,7 @@
           $(config.target).attr('id', id);
         }
 
-        config.target = "#" + id;
+        config.target = "_blank" + id;
       }
 
       Util.typeCheckConfig(NAME$8, config, DefaultType$6);
